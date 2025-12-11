@@ -1,10 +1,7 @@
 # 配置阿里云 Provider
 provider "alicloud" {
   region = var.region
-  access_key = var.access_key
-  secret_key = var.secret_key
 }
-
 # 创建 VPC（专有网络）
 resource "alicloud_vpc" "vpc" {
   vpc_name   = "${var.project_name}-vpc"
